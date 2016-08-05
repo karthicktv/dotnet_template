@@ -6,14 +6,26 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_template.Controllers
 {
+    public class TestContainer
+    {
+        public string content { get; set; }
+    }
+    
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<TestContainer> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<TestContainer> exit = new List<TestContainer>();
+            TestContainer value1 = new TestContainer();
+            value1.content = "value1;"
+            exit.Add(value1);
+            TestContainer value2 = new TestContainer();
+            value2.content = "value2;"
+            exit.Add(value2);
+            return exit.ToArray();
         }
 
         // GET api/values/5
