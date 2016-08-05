@@ -20,10 +20,10 @@ namespace dotnet_template.Controllers
         {
             List<TestContainer> exit = new List<TestContainer>();
             TestContainer value1 = new TestContainer();
-            value1.content = "value1;"
+            value1.content = "value1";
             exit.Add(value1);
             TestContainer value2 = new TestContainer();
-            value2.content = "value2;"
+            value2.content = "value2";
             exit.Add(value2);
             return exit.ToArray();
         }
