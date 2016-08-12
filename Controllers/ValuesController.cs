@@ -32,7 +32,7 @@ namespace dotnet_template.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "Hello Olivia";
+            return "Hello chirag";
         }
 
         // POST api/values
