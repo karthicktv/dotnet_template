@@ -20,7 +20,7 @@ namespace dotnet_template.Controllers
         {
             List<TestContainer> exit = new List<TestContainer>();
             TestContainer value1 = new TestContainer();
-            value1.content = "Karthick";
+            value1.content = "Fergus";
             exit.Add(value1);
             TestContainer value2 = new TestContainer();
             value2.content = "Victor";
